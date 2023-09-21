@@ -8,6 +8,9 @@ body {
   font-family: "iran-sans";
   text-align: right;
   direction: rtl;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 a:link {
   text-decoration: none;
@@ -29,6 +32,8 @@ a:active {
   margin: 30px 15px;
   padding: 30px;
   border-radius: 30px;
+  overflow: hidden;
+
 }
 .box_menu {
   text-align: center;
@@ -154,6 +159,7 @@ input:focus-visible {
     transition: 0.5s;
     border: none;
     height: 40px;
+    margin-top: 20px;
  
   }
 .slide3_home {
@@ -170,4 +176,63 @@ input:focus-visible {
   text-align: center;
   font-size: 15px;
 }
+.owl-carousel-home-slide3{
+  margin-top: 5%;
+}
+.owl-carousel-home-slide3 .item{
+  background-color: #dee0f2;
+  padding: 20px 20px;
+  border-radius: 10px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.owl-carousel-home-slide3 .item img{
+  width: 80px !important;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 10%;
+  
+   
+}
+.bx_home_slide3  h3{
+  font-size: 20px;
+  margin: 15% 12px;
+  
+   
+}
+.desc_home_slide3{
+  bottom: 0;
+}
+.owl-item.cloned.active{
+  margin:  15px 0 0 ;
+  transition: 0.5s;
 
+}
+.owl-item.active{
+  margin: 30px 0 0 ;
+  transition: 0.5s;
+
+
+}
+.owl-item.active.center{
+  margin: 0;
+  transition: 0.5s;
+  box-shadow: 0 7px 12px -6px #aaa;
+}
+.owl-item{
+  transition: 0.5s;
+
+}
+
+.img-animation-one{
+ position: absolute;
+ width: 270px !important;
+ height: auto;
+ top:190px;
+ left: -12px;
+ padding: 0;
+ overflow: hidden;
+}
