@@ -10,7 +10,10 @@ body {
   direction: rtl;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+
+    overflow-x: hidden;
+
+  
 }
 a:link {
   text-decoration: none;
@@ -33,6 +36,7 @@ a:active {
   padding: 30px;
   border-radius: 30px;
   overflow: hidden;
+  height:100vh;
 
 }
 .box_menu {
@@ -74,6 +78,8 @@ a:active {
   font-size: 65px;
   line-height: 65px;
   padding: 0 13%;
+  z-index: 3;
+  position: relative;
 }
 .startup {
   background-image: url(img/shap_style_6.png);
@@ -92,6 +98,8 @@ a:active {
   text-align: center;
   font-size: 14px;
   margin: 40px 0 10px;
+  position: relative;
+  z-index: 3;
 }
 
 .box-form {
@@ -102,6 +110,8 @@ a:active {
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  z-index: 3;
+  position: relative;
 }
 .box_form_btn button {
   font-weight: 900;
@@ -236,3 +246,121 @@ input:focus-visible {
  padding: 0;
  overflow: hidden;
 }
+
+@-webkit-keyframes slide_up_down{
+  0%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100%{
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+@keyframes slide_up_down{
+  0%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100%{
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+.animate01{
+  -webkit-animation:slide_up_down 1.7s ease-in-out infinite alternate both;
+  animation:slide_up_down 1.7s ease-in-out infinite alternate both;
+}
+
+.img-animation-two{
+  position: absolute;
+  width: 18% !important;
+  height: auto;
+  bottom:27%;
+  left: 15%;
+  padding: 0;
+  overflow: hidden;
+
+}
+@-webkit-keyframes scale_up_down {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale_up_down {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.animate02{
+  -webkit-animation: scale_up_down 1s ease-in-out infinite alternate both;
+  animation: scale_up_down 1s ease-in-out infinite alternate both;
+}
+
+.img-animation-three{
+  position: absolute;
+  width: 14% !important;
+  height: auto;
+  top:20%;
+  right:8%;
+  padding: 0;
+  overflow: hidden;
+
+}
+.img-animation-four{
+  position: absolute;
+  width: 30% !important;
+  bottom: -1%;
+  right: -30px;
+  padding: 0;
+  overflow: hidden;
+ 
+
+}
+.target{
+  margin-top: -120px !important;
+}
+
+.img-animation-five{
+
+  width: 20% !important;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.rotate-center {
+  -webkit-animation: rotate-center 100s linear infinite both;
+  animation: rotate-center 100s linear infinite both;}
+
+  @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
