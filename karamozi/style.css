@@ -11,9 +11,11 @@ body {
   margin: 0;
   padding: 0;
 
-    overflow-x: hidden;
-
-  
+  overflow-x: hidden;
+}
+a {
+  transition: 0.3s;
+  color: #000;
 }
 a:link {
   text-decoration: none;
@@ -25,6 +27,8 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+  transition: 0.3s;
+  color: #4a00e1;
 }
 
 a:active {
@@ -36,15 +40,14 @@ a:active {
   padding: 30px;
   border-radius: 30px;
   overflow: hidden;
-  height:100vh;
-
+  height: 100vh;
 }
 .box_menu {
   text-align: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  color:black;
+  color: black;
   font-size: 15px;
   margin-top: 5px;
 }
@@ -137,59 +140,57 @@ input:focus-visible {
   border: none;
   outline: none;
   height: 25px;
-  margin: 5px 0 0 ;
-
+  margin: 5px 0 0;
 }
-.form-box-one  {
+.form-box-one {
   border-right: 1px solid #949292;
-  
-  margin: 0 20px 0 ;
+
+  margin: 0 20px 0;
   padding-right: 10px;
 }
 
-.box_form_slide1 i{
-    padding-right: 4px;
+.box_form_slide1 i {
+  padding-right: 4px;
 }
 
-.slide2_home{
-    margin: 50px ;
-    padding: 0;
+.slide2_home {
+  margin: 50px;
+  padding: 0;
 }
-.box-img-slide2 img{
-    padding: 0 10%;
+.box-img-slide2 img {
+  padding: 0 10%;
 }
 .box_form_btn2 button {
-    font-weight: 900;
-    font-size: 15px;
-    padding: 8px 25px;
-    color: #fff;
-    background-color: #6640f4;
-    border-radius: 30px;
-  
-    transition: 0.5s;
-    border: none;
-    height: 40px;
-    margin-top: 20px;
- 
-  }
+  font-weight: 900;
+  font-size: 15px;
+  padding: 8px 25px;
+  color: #fff;
+  background-color: #6640f4;
+  border-radius: 30px;
+
+  transition: 0.5s;
+  border: none;
+  height: 40px;
+  margin-top: 20px;
+}
 .slide3_home {
   text-align: center;
   border-top: 1px #eeee solid;
   margin: 10px 20px;
 }
-.slide3_home h2{
+.slide3_home h2 {
   text-align: center;
   margin: 10px 20px;
   margin-top: 50px;
 }
-.desc-home-slide3{
+.desc-home-slide3 {
   text-align: center;
   font-size: 15px;
 }
-.owl-carousel-home-slide3{
+.owl-carousel-home-slide3 {
   margin-top: 5%;
 }
-.owl-carousel-home-slide3 .item{
+.owl-carousel-home-slide3 .item {
   background-color: #dee0f2;
   padding: 20px 20px;
   border-radius: 10px;
@@ -199,88 +200,79 @@ input:focus-visible {
   justify-content: center;
   align-items: center;
 }
-.owl-carousel-home-slide3 .item img{
+.owl-carousel-home-slide3 .item img {
   width: 80px !important;
   margin: 0 auto;
   position: relative;
   margin-bottom: 10%;
-  
-   
 }
-.bx_home_slide3  h3{
+.bx_home_slide3 h3 {
   font-size: 20px;
   margin: 15% 12px;
-  
-   
 }
-.desc_home_slide3{
+.desc_home_slide3 {
   bottom: 0;
 }
-.owl-item.cloned.active{
-  margin:  15px 0 0 ;
+.owl-item.cloned.active {
+  margin: 15px 0 0;
   transition: 0.5s;
-
 }
-.owl-item.active{
-  margin: 30px 0 0 ;
+.owl-item.active {
+  margin: 30px 0 0;
   transition: 0.5s;
-
-
 }
-.owl-item.active.center{
+.owl-item.active.center {
   margin: 0;
   transition: 0.5s;
   box-shadow: 0 7px 12px -6px #aaa;
 }
-.owl-item{
+.owl-item {
   transition: 0.5s;
-
 }
 
-.img-animation-one{
- position: absolute;
- width: 270px !important;
- height: auto;
- top:190px;
- left: -12px;
- padding: 0;
- overflow: hidden;
+.img-animation-one {
+  position: absolute;
+  width: 270px !important;
+  height: auto;
+  top: 190px;
+  left: -12px;
+  padding: 0;
+  overflow: hidden;
 }
 
-@-webkit-keyframes slide_up_down{
-  0%{
+@-webkit-keyframes slide_up_down {
+  0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-  100%{
+  100% {
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
 }
-@keyframes slide_up_down{
-  0%{
+@keyframes slide_up_down {
+  0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-  100%{
+  100% {
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
 }
-.animate01{
-  -webkit-animation:slide_up_down 1.7s ease-in-out infinite alternate both;
-  animation:slide_up_down 1.7s ease-in-out infinite alternate both;
+.animate01 {
+  -webkit-animation: slide_up_down 1.7s ease-in-out infinite alternate both;
+  animation: slide_up_down 1.7s ease-in-out infinite alternate both;
 }
 
-.img-animation-two{
+.img-animation-two {
   position: absolute;
   width: 18% !important;
   height: auto;
-  bottom:27%;
+  bottom: 27%;
   left: 15%;
   padding: 0;
   overflow: hidden;
-
 }
 @-webkit-keyframes scale_up_down {
   0% {
@@ -303,37 +295,33 @@ input:focus-visible {
   }
 }
 
-.animate02{
+.animate02 {
   -webkit-animation: scale_up_down 1s ease-in-out infinite alternate both;
   animation: scale_up_down 1s ease-in-out infinite alternate both;
 }
 
-.img-animation-three{
+.img-animation-three {
   position: absolute;
   width: 14% !important;
   height: auto;
-  top:20%;
-  right:8%;
+  top: 20%;
+  right: 8%;
   padding: 0;
   overflow: hidden;
-
 }
-.img-animation-four{
+.img-animation-four {
   position: absolute;
   width: 30% !important;
   bottom: -1%;
   right: -30px;
   padding: 0;
   overflow: hidden;
- 
-
 }
-.target{
+.target {
   margin-top: -120px !important;
 }
 
-.img-animation-five{
-
+.img-animation-five {
   width: 20% !important;
   margin: 0 auto;
   overflow: hidden;
@@ -341,26 +329,36 @@ input:focus-visible {
 
 .rotate-center {
   -webkit-animation: rotate-center 100s linear infinite both;
-  animation: rotate-center 100s linear infinite both;}
+  animation: rotate-center 100s linear infinite both;
+}
 
-  @-webkit-keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
   }
-  @keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-  
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.projects {
+  padding: 0 30px;
+  margin-top: 90px;
+}
+.content {
+  background-color: #f1f2fa;
+  position: relative;
+  padding: 100px 0;
+  border-radius: 30px;
+}
